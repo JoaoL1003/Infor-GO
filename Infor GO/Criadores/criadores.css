@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+                /*Estilizaçao do cabeçalho*/
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index:100;
+    background: linear-gradient(
+        rgb(0, 62, 179) ,
+        rgb(1, 9, 66) 
+    );
+}
+.logo{
+    height: 112px;
+    transition: 600ms;
+}
+.logo:hover{
+    opacity: 70%;
+}
+                /*Estilizaçao do menu lateral*/
+#menu{
+
+    height: 100%;
+    width: 250px;
+    background: linear-gradient(
+        rgb(1, 9, 66) ,
+        rgb(0, 62, 179) 
+        
+    );
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: 600ms all;
+    filter: opacity(90%);
+    display: none;
+}
+
+#menu a {
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 12px 10px 12px 32px ;
+}
+
+#menu a:hover{
+    
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.btn-abrir{
+    width: 65px;
+}
+.btn-abrir:hover{
+    opacity: 70%;
+}
+
+.TitlePrincipal{
+    color: rgb(11, 10, 92);
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    text-align:center;
+    font-size:7rem;
+    margin-bottom:-200px;
+}
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    font-family: "Playfair Display", serif;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    color: white;                                            
+}
+
+.card-alunos{
+    display: flex;
+    justify-content:center;
+    padding-top:150px;
+    margin-top:50px;
+}
+
+.card-content {
+    color: black;
+    font-weight: bold;
+}
+
+.card-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.card-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.imgcont {
+    width: 100%;
+    height: auto;
+}
+
+.card-text li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+
+}
+#desenvolvedores{
+    color:black;
+    text-align:center;
+}
+
+
+                        /*Rodape*/
+footer{
+    background-color:black;
+}
+#links{
+    color:white !important;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    padding:100px;
+    min-width:35vw;
+    max-width:100vw;
+    background-color:black;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+#div_links{
+    margin-top:30px;
+    text-align:center;
+}
+#Div_links a{
+    text-decoration:none;
+    color:white;
+    display:flex;
+    flex-wrap:wrap !important;
+    padding-top:4px;
+    justify-content:center;
+}
+#Div_links a:hover{
+    text-decoration:underline;
+}
+.img-midias{
+    height: 30px;
+    width: 30px;
+    margin-top:-8px;
+}
+
+.title-link{
+    font-family: "Kanit", sans-serif;
+    font-weight: bolder;
+    font-size:1.8rem;
+    min-height:20px;
+    max-height:90px;
+}
+.links-rodape{
+    font-family: "Kanit", sans-serif;
+    font-weight: normal;
+    justify-content: center;
+}
+.name-criador{
+    font-family: "Kanit", sans-serif;
+    font-weight: normal;
+    justify-content: center;
+}
+.div-copyright{
+    background-color:#02011c;
+    display:flex;
+}
+.img-midias{
+    height: 25px;
+    width: 25px;
+}
+#copyright{
+    text-align:left;
+    color:white;
+}
+#direitos-span{
+    color:rgb(134, 134, 134);
+}
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #012347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Começa oculto */
+}
